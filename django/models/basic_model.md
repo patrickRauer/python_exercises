@@ -45,4 +45,5 @@ class Inventory(AbstractCatalogItem):
 
 ### Exercise
 
-* 
+* Which table will be created from these models?
+* Who many indices every table has?
