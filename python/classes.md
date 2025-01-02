@@ -90,27 +90,6 @@ class ShoppingCart:
     def __init__(self):
         self.product_list = {}
         
-    def __contains__(self, product):
-        return str(product) not in self.product_list
-    
-    def __or__(self, other):
-        if isinstance(other, ShoppingCart):
-            for item in other.product_list:
-                self.add_product(item)
-            return self
-        raise NotImplemented
-    
-    def __lshift__(self, other):
-        if isinstance(other, Product):
-            self.add_product(other)
-            return self
-        raise NotImplemented
-    
-    def add_product(self, product: Product):
-        if product not in self:
-            self.product_list[str(product)] = 0
-        self.product_list[str(product)] += 1
-
 
 baguette = Bread('baguette', 2.69)
 toast = Bread('Toast', 1.99)
