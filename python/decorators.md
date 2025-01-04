@@ -21,6 +21,7 @@ def some_function(number: int = 100) -> int:
 ### Exercises
 * Write a decorator which stores the current time before the start and after the function is finished.
 * Make sure, that (meta) information of the function are right (see test case)
+* Sometimes it is not possible to use the @ annotation. How can a decorator be used without the @?
 
 ```python
 @timing_decorator
