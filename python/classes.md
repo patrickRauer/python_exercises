@@ -19,7 +19,7 @@ def prepare_function(return_value: str) -> Callable:
 
 hello = prepare_function('hello')
 
-# 'Prox' is to implement
+# 'Proxy' is to implement
 proxy = Proxy(func=hello)
 assert proxy.delay() == 'delay\nhello'
 
